@@ -1,0 +1,10 @@
+{
+	"extends": "@oldschoolgg/eslint-config",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": false,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"lib": ["DOM", "ES6"]
+	}
+}
