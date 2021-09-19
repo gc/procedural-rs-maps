@@ -1,5 +1,5 @@
 import SimplexNoise from 'simplex-noise';
-import tinycolor, { ColorFormats } from 'tinycolor2';
+import { ColorFormats } from 'tinycolor2';
 
 export const simplex = new SimplexNoise();
 

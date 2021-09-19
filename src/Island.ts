@@ -1,5 +1,5 @@
 import { debounce } from 'e';
-import tinycolor, { ColorFormats } from 'tinycolor2';
+import { ColorFormats } from 'tinycolor2';
 import { Pane } from 'tweakpane';
 
 import { Canvas } from './Canvas';
