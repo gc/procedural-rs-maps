@@ -4,7 +4,7 @@ import { Pane } from 'tweakpane';
 
 import { Canvas } from './Canvas';
 import { CONSTANTS } from './constants';
-import { simplex } from './util';
+import { mix, simplex } from './util';
 
 let octaves = [
   [1, 1],
@@ -138,13 +138,11 @@ export class Island {
         paint(
           x,
           y,
-          tinycolor
-            .mix(
-              CONSTANTS.BASE_COLOR,
-              CONSTANTS.MAIN_COLOR,
-              100 * (Math.trunc(elevation * CONSTANTS.COLOR_BANDING) / CONSTANTS.COLOR_BANDING)
-            )
-            .toRgb()
+          mix(
+            CONSTANTS.BASE_COLOR,
+            CONSTANTS.MAIN_COLOR,
+            100 * (Math.trunc(elevation * CONSTANTS.COLOR_BANDING) / CONSTANTS.COLOR_BANDING)
+          )
         );
       }
     }

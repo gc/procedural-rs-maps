@@ -4,6 +4,6 @@ export const CONSTANTS = {
   WATER_DEPTH: 0.1,
   COLOR_BANDING: 13,
   OCTAVES: 4,
-  BASE_COLOR: '#593605',
-  MAIN_COLOR: '#40710a'
+  BASE_COLOR: { r: 89, g: 54, b: 5, a: 1 },
+  MAIN_COLOR: { r: 64, g: 113, b: 10, a: 1 }
 };
